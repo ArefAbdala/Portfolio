@@ -2531,33 +2531,6 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 		}
 
-			.icon.major:before {
-				font-size: 1.25em;
-			}
-
-				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
-				}
-
-				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
-				}
-
-				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
-				}
-
-				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
-				}
-
-				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
-				}
-
-				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
-				}
 
 /* Image */
 
@@ -3240,7 +3213,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-image: url('images/spacex_ucf.png');
 		}
 
 		.wrapper.style1-alt {
@@ -3874,7 +3847,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
