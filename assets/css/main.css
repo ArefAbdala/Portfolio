@@ -3213,27 +3213,27 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5052b5;
+			background-color: #5C5346;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #5C5346;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #5C5346;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #8c4c24;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #8c4c24;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #8c4c24;
 		}
 
 		.wrapper.fullscreen {
@@ -3497,7 +3497,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #f1d062;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3710,9 +3710,9 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(0, 0, 0, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.8em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -3734,14 +3734,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #bf9b42;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #bf9b42, #033631);
+				background-image: -webkit-linear-gradient(to right, #bf9b42, #033631);
+				background-image: -ms-linear-gradient(to right, #bf9b42, #033631);
+				background-image: linear-gradient(to right, #bf9b42, #033631);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
