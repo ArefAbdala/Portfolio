@@ -3184,7 +3184,7 @@ input, select, textarea {
 			width: 75em;
 		}
 
-			@media screen and (max-width: 1000px) {
+			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
 					padding: 4em 4em 2em 4em ;
@@ -3209,7 +3209,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-image: url('images/spacex_ucf.png');
 		}
 
 		.wrapper.style1 {
