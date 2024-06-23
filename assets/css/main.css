@@ -3209,15 +3209,15 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-image: url('images/spacex_ucf.png');
+			background-image: url('/images/spacex_ucf.png');
 		}
 
 		.wrapper.style1 {
-			background-image: url('images/spacex_ucf.png');
+			background-image: url('/images/spacex_ucf.png');
 		}
 
 		.wrapper.style1-alt {
-			background-image: url('images/spacex_ucf.png');
+			background-color: #493382;
 		}
 
 		.wrapper.style2 {
