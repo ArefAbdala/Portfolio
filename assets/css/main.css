@@ -3209,11 +3209,11 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-image: url('images/spacex_ucf.png');
+			background-color: #5052b5;
 		}
 
 		.wrapper.style1 {
-			background-image: url('images/spacex_ucf.png');
+			background-color: #5052b5;
 		}
 
 		.wrapper.style1-alt {
@@ -3847,7 +3847,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		
+		background-image: url('images/spacex_ucf.png');
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
