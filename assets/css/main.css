@@ -1831,7 +1831,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color: #8d8383;
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
@@ -3234,6 +3234,12 @@ input, select, textarea {
 
 		.wrapper.style3-alt {
 			background-color: #8c4c24;
+		}
+		.wrapper.style4 {
+			background-color: #248c4c;
+		}
+		.wrapper.style4-alt {
+			background-color: #248c4c;
 		}
 
 		.wrapper.fullscreen {
