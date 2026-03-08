@@ -1,26 +1,26 @@
 /* ========================
    main.css — Aref Abdala Portfolio
-   Space / Technical Dark Design System
+   Engineering Notebook Warm Theme
    ======================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 /* ========================
    1. CSS Custom Properties
    ======================== */
 :root {
-  --bg-primary:    #0a0e1a;
-  --bg-secondary:  #0f1628;
-  --bg-tertiary:   #141d35;
-  --accent-cyan:   #00d4ff;
-  --accent-orange: #ff6b35;
-  --text-primary:  #e8eaf0;
-  --text-secondary:#8892a4;
-  --border-subtle: #1e2d4a;
-  --border-accent: #00d4ff44;
-  --success:       #10b981;
+  --bg-primary:    #faf6f0;
+  --bg-secondary:  #f0e8da;
+  --bg-tertiary:   #e5d9c8;
+  --accent-cyan:   #7a3f22;
+  --accent-orange: #c47840;
+  --text-primary:  #2a1c12;
+  --text-secondary:#6b5040;
+  --border-subtle: #d4c4b0;
+  --border-accent: #7a3f2233;
+  --success:       #4a7a4a;
 
-  --font-heading: 'Orbitron', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
   --font-body:    'Source Sans Pro', sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
 
@@ -82,8 +82,8 @@ body::before {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background:
-    radial-gradient(ellipse 60% 50% at 0% 0%,    rgba(0, 212, 255, 0.04) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(255, 107, 53, 0.03) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 50% at 0% 0%,    rgba(122, 63, 34, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(196, 120, 64, 0.04) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -96,7 +96,7 @@ body::before {
   top: 0; left: 0; right: 0;
   height: var(--nav-height);
   z-index: 100;
-  background: rgba(10, 14, 26, 0.88);
+  background: rgba(250, 246, 240, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
@@ -117,7 +117,7 @@ body::before {
 
 .nav-logo {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: 0.1em;
@@ -174,7 +174,7 @@ body::before {
 }
 
 .btn-outline:hover {
-  background: rgba(0, 212, 255, 0.1);
+  background: rgba(122, 63, 34, 0.08);
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
 }
@@ -185,7 +185,7 @@ body::before {
 }
 
 .btn-primary:hover {
-  background: #00b8d9;
+  background: #5c2e18;
   color: var(--bg-primary);
 }
 
@@ -279,6 +279,15 @@ body::before {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--text-secondary);
+}
+
+a.hero-meta-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+a.hero-meta-item:hover {
+  color: var(--accent-cyan);
 }
 
 .hero-meta-item i {
@@ -441,14 +450,14 @@ section {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 1fr 160px;
   gap: 32px;
   padding: 24px 0;
   border-bottom: 1px solid var(--border-subtle);
   transition: background 0.2s ease;
 }
 
-.timeline-item:hover { background: rgba(0, 212, 255, 0.02); }
+.timeline-item:hover { background: rgba(122, 63, 34, 0.04); }
 .timeline-item:last-child { border-bottom: none; }
 
 .timeline-date {
@@ -456,13 +465,19 @@ section {
   font-size: 0.7rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  padding-top: 2px;
+  order: 2;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
 }
 
 .timeline-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  order: 1;
 }
 
 .timeline-header {
@@ -475,8 +490,8 @@ section {
 
 .timeline-company {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: var(--text-primary);
   letter-spacing: 0.05em;
 }
@@ -540,7 +555,7 @@ section {
 .tag-accent {
   border-color: var(--border-accent);
   color: var(--accent-cyan);
-  background: rgba(0, 212, 255, 0.05);
+  background: rgba(122, 63, 34, 0.06);
 }
 
 .timeline-link {
@@ -594,7 +609,7 @@ section {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 212, 255, 0.08);
+  box-shadow: 0 16px 48px rgba(122, 63, 34, 0.12);
 }
 
 .project-card:hover::after { border-color: var(--border-accent); }
@@ -689,8 +704,7 @@ section {
 
 .project-image {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;
   border-radius: var(--radius-sm);
   margin-bottom: 16px;
   border: 1px solid var(--border-subtle);
@@ -767,7 +781,7 @@ section {
   transition: background 0.2s ease;
 }
 
-.publication-item:hover { background: rgba(0, 212, 255, 0.02); }
+.publication-item:hover { background: rgba(122, 63, 34, 0.04); }
 .publication-item:last-child { border-bottom: none; }
 
 .pub-year {
@@ -793,7 +807,7 @@ section {
 
 .pub-badge {
   padding: 3px 8px;
-  background: rgba(0, 212, 255, 0.08);
+  background: rgba(122, 63, 34, 0.07);
   border: 1px solid var(--border-accent);
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
@@ -878,7 +892,7 @@ section {
 
 .contact-card:hover {
   border-color: var(--border-accent);
-  background: rgba(0, 212, 255, 0.03);
+  background: rgba(122, 63, 34, 0.05);
   transform: translateX(4px);
   color: inherit;
 }
@@ -1101,8 +1115,7 @@ footer {
 
 .detail-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border-subtle);
   margin-bottom: 48px;
