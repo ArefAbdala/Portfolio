@@ -61,10 +61,12 @@
           <span class="stat-label">Current Position</span>
           <span class="stat-value" style="font-size:0.8rem;">Launch Engineer II</span>
         </div>
+        <!--
         <div class="stat-row">
           <span class="stat-label">AIAA Publications</span>
           <span class="stat-value">05</span>
         </div>
+        -->
         <div class="stats-downloads">
           <a href="Aref_portfolio.pdf" target="_blank"><i class="fas fa-download"></i> Portfolio</a>
           <a href="Aref_resume.pdf" target="_blank"><i class="fas fa-download"></i> Resume</a>
@@ -85,19 +87,15 @@
 
     <div class="timeline reveal-group">
 
-      <!-- Blue Origin -->
-      <div class="timeline-item reveal">
-        <div class="timeline-date">
-          <span class="badge-current">Current</span>
-          Jan 2025 – Present
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-company">Blue Origin</div>
+      <!-- Blue Origin — two roles, each with its own right-aligned date column -->
+      <div class="timeline-item reveal" style="display: block; padding: 24px 0;">
 
-          <!-- Role 1: Launch Engineer II -->
-          <div style="margin-top: 4px;">
+        <div class="timeline-company" style="margin-bottom: 14px;">Blue Origin</div>
+
+        <!-- Role 1: Launch Engineer II -->
+        <div style="display: grid; grid-template-columns: 1fr 160px; gap: 32px; margin-bottom: 18px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
             <div class="timeline-role">Launch Engineer II – Pneumatics</div>
-            <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-secondary); margin: 3px 0 6px;">Feb 2026 – Present</div>
             <p class="timeline-desc"><!-- placeholder until description is provided --></p>
             <div class="timeline-tags">
               <span class="tag tag-accent">LC-36</span>
@@ -105,11 +103,16 @@
               <span class="tag">Launch Engineering</span>
             </div>
           </div>
+          <div class="timeline-date">
+            <span class="badge-current">Current</span>
+            Feb 2026 – Present
+          </div>
+        </div>
 
-          <!-- Role 2: Pneumatic Operations -->
-          <div>
+        <!-- Role 2: Pneumatic Operations -->
+        <div style="display: grid; grid-template-columns: 1fr 160px; gap: 32px; margin-bottom: 12px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
             <div class="timeline-role">Pneumatic Operations</div>
-            <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-secondary); margin: 3px 0 6px;">Jan 2025 – Feb 2026</div>
             <p class="timeline-desc">Control room operator for ground and vehicle pneumatic systems at LC-36. Developed MK1 lunar lander cryogenic &amp; pneumatic loading CONOPS through launch campaign.</p>
             <div class="timeline-tags">
               <span class="tag tag-accent">MK1 Lunar Lander</span>
@@ -118,9 +121,10 @@
               <span class="tag">CONOPS</span>
             </div>
           </div>
-
-          <a href="experience/blue-origin.html" class="timeline-link" style="margin-top: 10px;">View details →</a>
+          <div class="timeline-date">Jan 2025 – Feb 2026</div>
         </div>
+
+        <a href="experience/blue-origin.html" class="timeline-link">View details →</a>
       </div>
 
       <!-- NASA -->
