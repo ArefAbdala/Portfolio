@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=JetBrains+Mono&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- Circular background -->
+  <circle cx="100" cy="100" r="100" fill="#faf6f0"/>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#d4c4b0" stroke-width="1.2"/>
+
+  <!-- Middle ring (subtle guide, scaled proportionally between center and outer) -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#7a3f22" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Center ring (r=42 to contain font-size 46 AA with padding) -->
+  <circle cx="100" cy="100" r="42" fill="none" stroke="#7a3f22" stroke-width="1.2"/>
+
+  <!-- Crosshair lines (gap at center ring r=42; reach outer ring r=88) -->
+  <line x1="100" y1="12" x2="100" y2="58" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="100" y1="142" x2="100" y2="188" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="12" y1="100" x2="58" y2="100" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="142" y1="100" x2="188" y2="100" stroke="#7a3f22" stroke-width="1"/>
+
+  <!-- Cardinal tick marks (bold, on outer ring) -->
+  <line x1="100" y1="12" x2="100" y2="19" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="100" y1="181" x2="100" y2="188" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="12" y1="100" x2="19" y2="100" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="181" y1="100" x2="188" y2="100" stroke="#7a3f22" stroke-width="2.5"/>
+
+  <!-- 45° diagonal tick marks on outer ring -->
+  <!-- Upper-right: outer (162,38) → inner (156,44) -->
+  <line x1="162" y1="38" x2="156" y2="44" stroke="#d4c4b0" stroke-width="1.2"/>
+  <!-- Upper-left: outer (38,38) → inner (44,44) -->
+  <line x1="38" y1="38" x2="44" y2="44" stroke="#d4c4b0" stroke-width="1.2"/>
+  <!-- Lower-right: outer (162,162) → inner (156,156) -->
+  <line x1="162" y1="162" x2="156" y2="156" stroke="#d4c4b0" stroke-width="1.2"/>
+  <!-- Lower-left: outer (38,162) → inner (44,156) -->
+  <line x1="38" y1="162" x2="44" y2="156" stroke="#d4c4b0" stroke-width="1.2"/>
+
+  <!-- AA monogram in center -->
+  <text x="100" y="112"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="46" font-weight="700"
+    fill="#2a1c12" letter-spacing="-2">AA</text>
+</svg>

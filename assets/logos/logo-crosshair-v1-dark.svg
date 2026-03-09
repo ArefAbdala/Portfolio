@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- Dark background -->
+  <circle cx="100" cy="100" r="100" fill="#2a1c12"/>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#6b5040" stroke-width="1.2"/>
+
+  <!-- Middle ring -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#7a3f22" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- Center ring -->
+  <circle cx="100" cy="100" r="42" fill="none" stroke="#7a3f22" stroke-width="1.2"/>
+
+  <!-- Crosshair lines -->
+  <line x1="100" y1="12" x2="100" y2="58" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="100" y1="142" x2="100" y2="188" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="12" y1="100" x2="58" y2="100" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="142" y1="100" x2="188" y2="100" stroke="#7a3f22" stroke-width="1"/>
+
+  <!-- Cardinal tick marks (amber) -->
+  <line x1="100" y1="12" x2="100" y2="19" stroke="#c47840" stroke-width="2.5"/>
+  <line x1="100" y1="181" x2="100" y2="188" stroke="#c47840" stroke-width="2.5"/>
+  <line x1="12" y1="100" x2="19" y2="100" stroke="#c47840" stroke-width="2.5"/>
+  <line x1="181" y1="100" x2="188" y2="100" stroke="#c47840" stroke-width="2.5"/>
+
+  <!-- 45° diagonal tick marks -->
+  <line x1="162" y1="38" x2="156" y2="44" stroke="#6b5040" stroke-width="1.2"/>
+  <line x1="38" y1="38" x2="44" y2="44" stroke="#6b5040" stroke-width="1.2"/>
+  <line x1="162" y1="162" x2="156" y2="156" stroke="#6b5040" stroke-width="1.2"/>
+  <line x1="38" y1="162" x2="44" y2="156" stroke="#6b5040" stroke-width="1.2"/>
+
+  <!-- AA monogram (cream) -->
+  <text x="100" y="112"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="46" font-weight="700"
+    fill="#faf6f0" letter-spacing="-2">AA</text>
+</svg>

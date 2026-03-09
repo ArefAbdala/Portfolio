@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- Plain background — no outer ring -->
+  <rect width="200" height="200" fill="#faf6f0"/>
+
+  <!-- Orbit ellipse (floats freely around AA) -->
+  <ellipse cx="100" cy="127" rx="62" ry="18"
+    fill="none" stroke="#7a3f22" stroke-width="1.5"
+    stroke-dasharray="5 4"
+    transform="rotate(-8 100 127)"/>
+
+  <!-- Satellite dot -->
+  <circle cx="157" cy="117" r="5" fill="#7a3f22"/>
+
+  <!-- AA monogram -->
+  <text x="100" y="124"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="66" font-weight="700"
+    fill="#2a1c12" letter-spacing="-3">AA</text>
+</svg>

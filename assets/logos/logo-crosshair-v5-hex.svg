@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <rect width="200" height="200" fill="#faf6f0"/>
+
+  <!--
+    Pointy-top hexagon, circumradius=88, center=(100,100)
+    Vertices at 270°,330°,30°,90°,150°,210°:
+    (100,12) (176,56) (176,144) (100,188) (24,144) (24,56)
+    Left/right edges are vertical — midpoints at (24,100) and (176,100)
+  -->
+  <polygon points="100,12 176,56 176,144 100,188 24,144 24,56"
+    fill="none" stroke="#d4c4b0" stroke-width="1.2"/>
+
+  <!-- Middle ring (circle, inscribed inside hex) -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#7a3f22" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Center ring -->
+  <circle cx="100" cy="100" r="42" fill="none" stroke="#7a3f22" stroke-width="1.2"/>
+
+  <!-- Crosshair lines (reach hex boundaries) -->
+  <line x1="24" y1="100" x2="58" y2="100" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="142" y1="100" x2="176" y2="100" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="100" y1="12" x2="100" y2="58" stroke="#7a3f22" stroke-width="1"/>
+  <line x1="100" y1="142" x2="100" y2="188" stroke="#7a3f22" stroke-width="1"/>
+
+  <!-- Cardinal tick marks at hex boundary midpoints -->
+  <line x1="24" y1="100" x2="31" y2="100" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="169" y1="100" x2="176" y2="100" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="100" y1="12" x2="100" y2="19" stroke="#7a3f22" stroke-width="2.5"/>
+  <line x1="100" y1="181" x2="100" y2="188" stroke="#7a3f22" stroke-width="2.5"/>
+
+  <!-- Small dots at the 4 diagonal hex vertices -->
+  <circle cx="176" cy="56" r="2.5" fill="#d4c4b0"/>
+  <circle cx="176" cy="144" r="2.5" fill="#d4c4b0"/>
+  <circle cx="24" cy="144" r="2.5" fill="#d4c4b0"/>
+  <circle cx="24" cy="56" r="2.5" fill="#d4c4b0"/>
+
+  <!-- AA monogram -->
+  <text x="100" y="112"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="46" font-weight="700"
+    fill="#2a1c12" letter-spacing="-2">AA</text>
+</svg>

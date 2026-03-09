@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- Dark circular background -->
+  <circle cx="100" cy="100" r="100" fill="#2a1c12"/>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#6b5040" stroke-width="1.2"/>
+
+  <!-- Orbit ellipse (amber dashes on dark) -->
+  <ellipse cx="100" cy="127" rx="62" ry="18"
+    fill="none" stroke="#c47840" stroke-width="1.5"
+    stroke-dasharray="5 4"
+    transform="rotate(-8 100 127)"/>
+
+  <!-- Satellite dot (amber) -->
+  <circle cx="157" cy="117" r="5" fill="#c47840"/>
+
+  <!-- AA monogram (cream) -->
+  <text x="100" y="124"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="66" font-weight="700"
+    fill="#faf6f0" letter-spacing="-3">AA</text>
+</svg>

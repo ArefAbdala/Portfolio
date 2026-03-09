@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- ── 1. Background ─────────────────────────────── -->
+  <circle cx="130" cy="130" r="130" fill="#faf6f0"/>
+
+  <!-- ── 2. Outer seal rings ───────────────────────── -->
+  <circle cx="130" cy="130" r="124" fill="none" stroke="#7a3f22" stroke-width="3"/>
+  <circle cx="130" cy="130" r="118" fill="none" stroke="#d4c4b0" stroke-width="1.5"/>
+
+  <!-- Dot perimeter — 12 dots at r=121, every 30° -->
+  <circle cx="251.0" cy="130.0" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="234.8" cy="190.5" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="190.5" cy="234.8" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="130.0" cy="251.0" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="69.5"  cy="234.8" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="25.2"  cy="190.5" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="9.0"   cy="130.0" r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="25.2"  cy="69.5"  r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="69.5"  cy="25.2"  r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="130.0" cy="9.0"   r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="190.5" cy="25.2"  r="3.2" fill="#7a3f22" opacity="0.7"/>
+  <circle cx="234.8" cy="69.5"  r="3.2" fill="#7a3f22" opacity="0.7"/>
+
+  <!-- ── 3. Orbits (drawn before nucleus so they appear to sweep around it) ── -->
+  <!-- Orbit 1 — rotate(-12°), tan dashes. rx=108 ry=34 -->
+  <ellipse cx="130" cy="130" rx="108" ry="34"
+    fill="none" stroke="#d4c4b0" stroke-width="3.5"
+    stroke-dasharray="6 4" opacity="0.9"
+    transform="rotate(-12 130 130)"/>
+
+  <!-- Orbit 2 — rotate(+18°), amber dashes. rx=108 ry=34 -->
+  <ellipse cx="130" cy="130" rx="108" ry="34"
+    fill="none" stroke="#c4884a" stroke-width="3"
+    stroke-dasharray="5 5" opacity="0.82"
+    transform="rotate(18 130 130)"/>
+
+  <!-- Satellite dots — outside the nucleus so they remain visible -->
+  <!--
+    Sat 1: parametric (rx=106, ry=34) at angle -25°
+      x = 130 + 106·cos(-25°) = 130 + 96.1 = 226.1
+      y = 130 + 34·sin(-25°)  = 130 - 14.4 = 115.6
+      distance from center ≈ 97 > nucleus r=76 ✓
+  -->
+  <circle cx="226.1" cy="115.6" r="8" fill="#d4c4b0" opacity="0.95"/>
+  <!--
+    Sat 2: parametric (rx=106, ry=34) at angle 178°
+      x = 130 + 106·cos(178°) = 130 - 105.9 = 24.1
+      y = 130 + 34·sin(178°)  = 130 + 1.2   = 131.2
+      distance from center ≈ 106 > nucleus r=76 ✓
+  -->
+  <circle cx="24.1" cy="131.2" r="7" fill="#c4884a" opacity="0.88"/>
+
+  <!-- ── 4. Crosshair lines — outer zone between nucleus (r=76) and seal (r=118) -->
+  <!--
+    Span from r=84 to r=112 in the outer annular zone.
+    Top:    (130, 18) → (130, 46)
+    Bottom: (130, 214) → (130, 242)
+    Left:   (18, 130) → (46, 130)
+    Right:  (214, 130) → (242, 130)
+  -->
+  <line x1="130" y1="18"  x2="130" y2="46"  stroke="#7a3f22" stroke-width="1.5" opacity="0.4"/>
+  <line x1="130" y1="214" x2="130" y2="242" stroke="#7a3f22" stroke-width="1.5" opacity="0.4"/>
+  <line x1="18"  y1="130" x2="46"  y2="130" stroke="#7a3f22" stroke-width="1.5" opacity="0.4"/>
+  <line x1="214" y1="130" x2="242" y2="130" stroke="#7a3f22" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- ── 5. Nucleus (drawn on top of orbits — covers orbit interior, clean AA bg) ── -->
+  <!--
+    r=76: clearly larger than AA text (~r=55 to contain font-size 90)
+    Cream fill hides the orbit lines passing through the center.
+  -->
+  <circle cx="130" cy="130" r="76" fill="none" stroke="#7a3f22" stroke-width="2.5"/>
+
+  <!-- ── 6. AA monogram ─────────────────────────────── -->
+  <text x="130" y="149"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="90" font-weight="700"
+    fill="#2a1c12" letter-spacing="-3">AA</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 270" width="160" height="270">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=JetBrains+Mono&display=swap');
+    ]]></style>
+  </defs>
+
+  <rect width="160" height="270" fill="#faf6f0"/>
+
+  <!-- Rocket body (tapered triangle pointing up) -->
+  <path d="M 80,25 L 61,145 L 99,145 Z" fill="#7a3f22"/>
+
+  <!-- Left fin -->
+  <path d="M 61,145 L 42,178 L 66,148 Z" fill="#2a1c12" opacity="0.85"/>
+
+  <!-- Right fin -->
+  <path d="M 99,145 L 118,178 L 94,148 Z" fill="#2a1c12" opacity="0.85"/>
+
+  <!-- Nozzle bell -->
+  <path d="M 69,145 Q 69,162 80,167 Q 91,162 91,145 Z" fill="#2a1c12"/>
+
+  <!-- Porthole window -->
+  <circle cx="80" cy="96" r="11" fill="none" stroke="#faf6f0" stroke-width="2"/>
+  <circle cx="80" cy="96" r="4" fill="#faf6f0" opacity="0.5"/>
+
+  <!-- Exhaust flame (amber) -->
+  <ellipse cx="80" cy="179" rx="10" ry="14" fill="#c47840" opacity="0.9"/>
+  <!-- Inner flame core (lighter) -->
+  <ellipse cx="80" cy="182" rx="5" ry="8" fill="#faf6f0" opacity="0.4"/>
+
+  <!-- Name line 1 -->
+  <text x="80" y="220"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="24" font-weight="700"
+    fill="#2a1c12" letter-spacing="5">AREF</text>
+
+  <!-- Name line 2 -->
+  <text x="80" y="244"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="24" font-weight="700"
+    fill="#2a1c12" letter-spacing="2">ABDALA</text>
+
+  <!-- Separator -->
+  <line x1="24" y1="251" x2="136" y2="251" stroke="#d4c4b0" stroke-width="0.8"/>
+
+  <!-- Tagline -->
+  <text x="80" y="263"
+    text-anchor="middle"
+    font-family="'JetBrains Mono', 'Courier New', Courier, monospace"
+    font-size="6.5" fill="#7a3f22" letter-spacing="2">AEROSPACE ENGINEER</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- Plain background -->
+  <rect width="200" height="200" fill="#faf6f0"/>
+
+  <!--
+    Diamond frame (rotated square), vertices at cardinal points.
+    Half-diagonal = 92px → vertices: top(100,8) right(192,100) bottom(100,192) left(8,100)
+    At cy=127 the diamond x-range is [8+19=27, 173] — orbit rx=62 fits within.
+  -->
+  <polygon points="100,8 192,100 100,192 8,100"
+    fill="none" stroke="#d4c4b0" stroke-width="1.2"/>
+
+  <!-- Small accent dots at diamond vertices -->
+  <circle cx="100" cy="8"   r="2.5" fill="#7a3f22" opacity="0.5"/>
+  <circle cx="192" cy="100" r="2.5" fill="#7a3f22" opacity="0.5"/>
+  <circle cx="100" cy="192" r="2.5" fill="#7a3f22" opacity="0.5"/>
+  <circle cx="8"   cy="100" r="2.5" fill="#7a3f22" opacity="0.5"/>
+
+  <!-- Orbit ellipse -->
+  <ellipse cx="100" cy="127" rx="62" ry="18"
+    fill="none" stroke="#7a3f22" stroke-width="1.5"
+    stroke-dasharray="5 4"
+    transform="rotate(-8 100 127)"/>
+
+  <!-- Satellite dot -->
+  <circle cx="157" cy="117" r="5" fill="#7a3f22"/>
+
+  <!-- AA monogram -->
+  <text x="100" y="124"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="66" font-weight="700"
+    fill="#2a1c12" letter-spacing="-3">AA</text>
+</svg>

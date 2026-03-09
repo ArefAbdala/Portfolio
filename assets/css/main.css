@@ -116,6 +116,13 @@ body::before {
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo-text {
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 700;
@@ -124,7 +131,26 @@ body::before {
   white-space: nowrap;
 }
 
-.nav-logo span { color: var(--accent-cyan); }
+.nav-logo-text span { color: var(--accent-cyan); }
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.nav-logo:hover .nav-logo-img { opacity: 0.8; }
+
+.footer-logo {
+  height: 32px;
+  width: auto;
+  opacity: 0.45;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover { opacity: 0.7; }
 
 .nav-links {
   display: flex;
